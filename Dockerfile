@@ -15,8 +15,8 @@ RUN apt-get update && apt-get install -y --force-yes \
 	ruby-dev \
 	ruby
 
-# Install puppet 3.8
-RUN gem install puppet -v '~> 3.8.0'
+# Install puppet 4.10
+RUN gem install puppet -v '~> 4.10.0'
 
 # Install puppet-lint
 RUN gem install puppet-lint
