@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Tech <tech@typhon.com>
+MAINTAINER Tech Typhon <tech@typhon.com>
 
 # Fix missing locales
 ENV LC_ALL="C.UTF-8" LANG="C.UTF-8"
