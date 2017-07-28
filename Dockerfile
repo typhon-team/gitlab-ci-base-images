@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM ruby:2.2
 MAINTAINER Tech <tech@typhon.com>
 
 # Fix missing locales
