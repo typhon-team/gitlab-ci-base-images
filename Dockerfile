@@ -19,5 +19,5 @@ RUN apt-get update && apt-get install -y --force-yes \
 RUN gem install puppet -v '~> 3.8.0'
 
 # Install puppet-lint
-RUN gem install puppet-lint puppet-lint-absolute_classname-check puppet-lint-classes_and_types_beginning_with_digits-check puppet-lint-leading_zero-check puppet-lint-trailing_comma-check puppet-lint-unquoted_string-check puppet-lint-variable_contains_upcase puppet-lint-version_comparison-check
+RUN gem install puppet-lint puppet-lint-absolute_classname-check puppet-lint-classes_and_types_beginning_with_digits-check puppet-lint-leading_zero-check puppet-lint-trailing_comma-check puppet-lint-unquoted_string-check puppet-lint-variable_contains_upcase puppet-lint-version_comparison-check puppet-lint-param-docs
 
