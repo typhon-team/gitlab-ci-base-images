@@ -13,7 +13,8 @@ RUN echo 'apt::install-recommends "false";' > /etc/apt/apt.conf.d/00recommends
 # Install ruby
 RUN apt-get update && apt-get install -y --force-yes \
 	ruby-dev \
-	ruby
+	ruby \
+    make
 
 # Install puppet 3.8
 RUN gem install puppet -v '~> 3.8.0'
