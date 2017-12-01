@@ -14,7 +14,8 @@ RUN echo 'apt::install-recommends "false";' > /etc/apt/apt.conf.d/00recommends
 RUN apt-get update && apt-get install -y --force-yes \
 	ruby-dev \
 	ruby \
-    make gcc build-essential
+    make gcc build-essential \
+    git
 
 # Install puppet 3.8
 RUN gem install puppet -v '~> 3.8.0'
