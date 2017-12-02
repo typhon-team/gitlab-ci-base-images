@@ -1,13 +1,13 @@
 ---
-image: docker:latest
+#image: docker:latest
 stages:
   - build
 
 job:
   stage: build
   tags:
-    #    - docker-runner
-    - typhon
+    - docker
+      #    - typhon
   script:
     - env
     - docker login -u $CI_ARTI_USER -p $CI_ARTI_PASS -e team@typhon.com https://$CI_ARTI_URL
