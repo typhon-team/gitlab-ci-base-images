@@ -12,5 +12,5 @@ job:
     - env
     - docker login -u $CI_ARTI_USER -p $CI_ARTI_PASS https://$CI_ARTI_URL
     - docker build -t ${CI_ARTI_URL}:jessie-puppet410 .
-    - docker push ${CI_ARTI_URL}:jessie-puppet410
+    - docker push ${CI_ARTI_URL}/docker-claranet:jessie-puppet410
 
