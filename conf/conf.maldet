@@ -69,8 +69,8 @@ import_config_expire="43200"
 # files to be downloaded from a remote URL. THIS WILL OVERWRITE ANY LOCAL CUSTOM
 # SIGNATURE FILES! It is recommended for large-scale deployments to define these
 # variables within a import_config_url file.
-import_custsigs_md5_url="http://sigs.typhon.net/typhon.md5.mal.hdb"
-import_custsigs_hex_url="http://sigs.typhon.net/typhon.hex.mal.ndb"
+import_custsigs_md5_url="http://sigs.adm.typhon.net/typhon.md5.mal.hdb"
+import_custsigs_hex_url="http://sigs.adm.typhon.net/typhon.hex.mal.ndb"
 
 ##
 # [ SCAN OPTIONS ]

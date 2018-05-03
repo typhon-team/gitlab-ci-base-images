@@ -14,8 +14,4 @@ RUN cd /tmp/maldetect-1.*/ && sh /tmp/maldetect-1.*/install.sh
 COPY conf/conf.maldet /usr/local/maldetect/
 COPY conf/freshclam.conf /etc/clamav/
 
-# Init signature loading
-RUN freshclam
-RUN maldet -u
-
 CMD ["maldet","freshclam","clamscan","clamdscan"]
