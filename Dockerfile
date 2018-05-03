@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y wget clamav clamav-freshclam bsdmainuti
 RUN wget http://www.rfxn.com/downloads/maldetect-current.tar.gz
 RUN tar -xvzf maldetect-current.tar.gz -C /tmp/
 WORKDIR /tmp/maldetect-1.6/
-RUN /tmp/maldetect-1.6/install.sh
+RUN /tmp/maldetect-1.*/install.sh
 
 # copy custom conf file
 COPY conf/conf.maldet /usr/local/maldetect/
