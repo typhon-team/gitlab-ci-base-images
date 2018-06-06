@@ -1,4 +1,4 @@
-FROM ruby:2.2
+FROM ruby:2.3
 MAINTAINER Tech Typhon <tech@typhon.com>
 
 # Fix missing locales
