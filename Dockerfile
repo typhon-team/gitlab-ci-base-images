@@ -23,3 +23,4 @@ RUN gem install puppet -v '~> 4.10.0'
 # Install puppet-lint and bundler
 RUN gem install bundler puppet-lint puppet-lint-absolute_classname-check puppet-lint-classes_and_types_beginning_with_digits-check puppet-lint-leading_zero-check puppet-lint-trailing_comma-check puppet-lint-unquoted_string-check puppet-lint-variable_contains_upcase puppet-lint-version_comparison-check puppet-lint-param-docs
 
+
