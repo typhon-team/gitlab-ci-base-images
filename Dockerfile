@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y --force-yes \
 
 
 # Install puppet 5
-RUN gem install puppet -v '<= 6.0.0'
+RUN gem install puppet -v '< 6.0.0'
 
 # Install puppet-lint and bundler  using puppet environment
 RUN gem install bundler puppet-lint puppet-lint-absolute_classname-check puppet-lint-classes_and_types_beginning_with_digits-check puppet-lint-leading_zero-check puppet-lint-trailing_comma-check puppet-lint-unquoted_string-check puppet-lint-variable_contains_upcase puppet-lint-version_comparison-check puppet-lint-param-docs
