@@ -21,9 +21,9 @@ RUN apt-get update && apt-get install -y --force-yes \
 RUN wget -O /tmp/puppet.deb http://apt.puppetlabs.com/puppetlabs-release-pc1-jessie.deb -O /tmp/puppet.deb
 RUN dpkg -i /tmp/puppet.deb
 RUN apt-get update
-RUN apt-get install --force-yes  -y puppet-agent
+RUN apt-get install --force-yes  -y puppet-agent bundler
 
 # Install puppet-lint and bundler
-RUN gem install bundler puppet-lint puppet-lint-absolute_classname-check puppet-lint-classes_and_types_beginning_with_digits-check puppet-lint-leading_zero-check puppet-lint-trailing_comma-check puppet-lint-unquoted_string-check puppet-lint-variable_contains_upcase puppet-lint-version_comparison-check puppet-lint-param-docs
+RUN gem install puppet-lint puppet-lint-absolute_classname-check puppet-lint-classes_and_types_beginning_with_digits-check puppet-lint-leading_zero-check puppet-lint-trailing_comma-check puppet-lint-unquoted_string-check puppet-lint-variable_contains_upcase puppet-lint-version_comparison-check puppet-lint-param-docs
 
 
