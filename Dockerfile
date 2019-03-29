@@ -17,8 +17,8 @@ RUN apt-get update && apt-get install -y --force-yes \
     make gcc build-essential \
     git wget
 
-# Install puppet 5
-RUN wget -O /tmp/puppet.deb https://apt.puppetlabs.com/puppet5-release-stretch.deb
+# Install puppet 6
+RUN wget -O /tmp/puppet.deb https://apt.puppetlabs.com/puppet6-release-stretch.deb
 RUN dpkg -i /tmp/puppet.deb
 RUN apt-get update
 RUN apt-get install --force-yes  -y puppet-agent bundler
