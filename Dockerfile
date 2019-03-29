@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y --force-yes \
 
 # Install puppet 4.10
 RUN wget -O /tmp/puppet.deb http://apt.puppetlabs.com/puppetlabs-release-pc1-jessie.deb -O /tmp/puppet.deb
+RUN dpkg -i /tmp/puppet.deb
 RUN apt-get update
 RUN apt-get install --force-yes  -y puppet-agent
 RUN puppet --version
