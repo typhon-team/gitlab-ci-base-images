@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --force-yes \
 	ruby-dev \
 	ruby \
     make gcc build-essential \
-    git
+    git wget
 
 # Install puppet 4.10
 RUN wget -O /tmp/puppet.deb http://apt.puppetlabs.com/puppetlabs-release-pc1-jessie.deb -O /tmp/puppet.deb
