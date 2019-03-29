@@ -1,4 +1,4 @@
-FROM ruby:2.3
+FROM debian:stretch
 MAINTAINER Tech Typhon <tech@typhon.com>
 
 # Fix missing locales
@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y --force-yes \
     git wget
 
 # Install puppet 4.10
-RUN wget -O /tmp/puppet.deb http://apt.puppetlabs.com/puppetlabs-release-pc1-jessie.deb -O /tmp/puppet.deb
+RUN wget -O /tmp/puppet.deb http://apt.puppetlabs.com/puppetlabs-release-pc1-stretch.deb -O /tmp/puppet.deb
 RUN dpkg -i /tmp/puppet.deb
 RUN apt-get update
 RUN apt-get install --force-yes  -y puppet-agent bundler
